@@ -1,17 +1,19 @@
+require('dotenv').config();
+
 const express = require("express");
 const cors = require("cors");
 const app = express();
-const port = 8080;
+const port = process.env.PORT || 8080;
 const path = require ( 'path' );
 const mysql = require('mysql2');
 
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(cors({
-    origin: "http://localhost",
-    methods: "GET,POST",
-    allowedHeaders: "Content-Type"
-}));
+    origin: "*", // Permite todas as origens
+    methods: "GET,POST", // Métodos permitidos
+    allowedHeaders: "Content-Type" // Cabeçalhos permitidos
+  }));
 
 app.use(express.json());
 
