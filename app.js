@@ -16,13 +16,12 @@ app.use(cors({
 app.use(express.json());
 
 const dbConfig = {
-    host: 'mysql-aula.cuebxlhckhcy.us-east-1.rds.amazonaws.com',
-    user: 'mysqlaula',
-    password: 'MySQLAula123!',
-    database: 'mysqlaula',
-    port: 3306
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME,
+    port: process.env.DB_PORT
 };
-
 
 app.post("/api/results", (req, res) => {
 const {jogador1, jogador2, resultado, data_jogo} = req.body    
