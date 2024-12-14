@@ -1,0 +1,12 @@
+services:
+  - name: jogodavelha
+    type: web
+    env: node
+    region: oregon # Escolha a região mais próxima para você, como oregon, frankfurt, etc.
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000 # Porta onde seu app escuta (muitas vezes o Render injeta isso automaticamente)
