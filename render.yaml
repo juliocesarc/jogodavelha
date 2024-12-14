@@ -9,4 +9,4 @@ services:
       - key: NODE_ENV
         value: production
       - key: PORT
-        value: 3000 # Porta onde seu app escuta (muitas vezes o Render injeta isso automaticamente)
+        value: 8080 # Porta onde seu app escuta (muitas vezes o Render injeta isso automaticamente)
