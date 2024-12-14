@@ -173,7 +173,7 @@ function declareWinner(winner) {
         data_jogo: gameTime,
     };
 
-    fetch("http://localhost:8080/api/results", {
+    fetch("https://jogodavelha-jpju.onrender.com/api/results", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
