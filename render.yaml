@@ -9,4 +9,14 @@ services:
       - key: NODE_ENV
         value: production
       - key: PORT
-        value: 8080 # Porta onde seu app escuta (muitas vezes o Render injeta isso automaticamente)
+        value: 8080
+      - key: DB_HOST
+        value: mysql-aula.cuebxlhckhcy.us-east-1.rds.amazonaws.com
+      - key: DB_USER
+        value: mysqlaula
+      - key: DB_PASSWORD
+        value: MySQLAula123!
+      - key: DB_NAME
+        value: mysqlaula
+      - key: DB_PORT
+        value: "3306"
