@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Jogo da Velha</h1>
+
+    <div id="player_names" class="hide">
+        <h2>Identifique-se:</h2>
+        <label for="player1_name">Jogador 1:</label>
+        <input type="text" id="player1_name" placeholder="Nome do Jogador 1">
+        <label for="player2_name">Jogador 2:</label>
+        <input type="text" id="player2_name" placeholder="Nome do Jogador 2">
+        <button id="start_game">Iniciar Jogo</button>
+    </div>
+
+    <div id="buttons_container">
+        <button id="2_players">2 jogadores</button>
+        <button id="ai_player">contra IA</button>
+    </div>
+
+    <div id="container" class="hide">
+        <div id="block_1" class="box"></div>
+        <div id="block_2" class="box"></div>
+        <div id="block_3" class="box"></div>
+        <div id="block_4" class="box"></div>
+        <div id="block_5" class="box"></div>
+        <div id="block_6" class="box"></div>
+        <div id="block_7" class="box"></div>
+        <div id="block_8" class="box"></div>
+        <div id="block_9" class="box"></div>
+
+        <div id="scoreboard_container">
+            <h2>Placar:</h2>
+            <span class="score_box">
+                <span id="x_scoreboard">Jogador 1</span>: 
+                <span id="scoreboard_1">0</span>
+            </span>
+            <span class="score_box">
+                <span id="o_scoreboard">Jogador 2</span>: 
+                <span id="scoreboard_2">0</span>
+            </span>
+        </div>
+    </div>
+
+    <div class="hide">
+        <div class="x">X</div>
+        <div class="o"></div>
+    </div>
+
+    <div id="message" class="hide">
+        <p></p>
+    </div>
+
+    <script src="./scripts.js"></script>
+</body>
+</html>
